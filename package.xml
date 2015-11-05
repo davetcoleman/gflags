@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='ASCII'?>
+<package>
+  <name>gflags</name>
+
+  <version>0.2.0</version>
+
+  <description>ROS wrapper for gflags that fixes the cmake issue in Ubuntu 14.04</description>
+
+  <maintainer email="davetcoleman@gmail.com">Dave Coleman</maintainer>
+  <license>BSD</license>
+
+  <url type="website">https://github.com/davetcoleman/gflags</url>
+  <url type="butracker">https://github.com/davetcoleman/gflags/issues</url>
+  <url type="repository">https://github.com/davetcoleman/gflags/</url>
+
+  <author email="davetcoleman@gmail.com">Dave Coleman</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>libgflags-dev</build_depend>
+
+</package>
