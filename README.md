@@ -1,5 +1,14 @@
 # Gflags ROS Wrapper
 
+## Motivation
+
+It's broken in Ubuntu 14.04
+https://github.com/gflags/gflags/issues/120
+
+## About
+
+https://gflags.github.io/gflags/
+
 ## Usage
 
 In your package's package.xml:
@@ -22,7 +31,9 @@ In your code's header:
 In your main() function:
 
     google::SetVersionString("0.0.1");
-    google::SetUsageMessage("Node name");
+    google::SetUsageMessage("Explanation of what this node does");
     google::ParseCommandLineFlags(&argc, &argv, true);
+
+    ros::init(argc, argv, "MyNode", ros::init_options::AnonymousName);
 
     int mode = FLAGS_mode;
